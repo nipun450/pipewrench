@@ -11,6 +11,7 @@ python:
   - "3.5"
 
 before_install:
+  - pip install pylint
   - make pylint
   - docker pull amfoerster/hadoop-docker
   - docker pull mysql:5.7
