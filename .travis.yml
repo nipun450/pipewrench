@@ -11,6 +11,7 @@ python:
   - "3.5"
 
 before_install:
+  - make pylint
   - docker pull amfoerster/hadoop-docker
   - docker pull mysql:5.7
   - docker ps -a
@@ -23,7 +24,6 @@ install:
   - python setup.py -q install
 
 script:
-  - make pylint
   - make build
 
 
