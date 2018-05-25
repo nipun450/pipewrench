@@ -21,7 +21,6 @@ install:
   - python setup.py -q install
 
 script:
-  - make pylint
   - make build
 
 
