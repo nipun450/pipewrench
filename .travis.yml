@@ -5,6 +5,9 @@ services:
 
 language: python
 
+env:
+  - PYTHONPATH=""
+
 python:
   - "2.7"
   - "3.5"
@@ -21,6 +24,7 @@ install:
   - python setup.py -q install
 
 script:
+  - make pylint
   - make build
 
 
