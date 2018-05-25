@@ -12,7 +12,7 @@ python:
 
 before_install:
   - pip install pylint
-  - pip uninstall enum34
+  - pip uninstall -y enum34
   - make pylint
   - docker pull amfoerster/hadoop-docker
   - docker pull mysql:5.7
